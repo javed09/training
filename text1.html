@@ -1,6 +1,14 @@
-<html>
+<!-- <html>
 <body style="margin-top: 250px;background-color: 	#778899;">
 <h1 style="text-align: center; font-size: 3rem;">Hello, My name is Javed</h1>
 <p style="text-align: center; font-size: 1.2rem;">I am a BCA 3rd year Student.</p>
 </body>
-</html>
+</html> -->
+
+var http = require('http');
+
+http.createServer(function(req,res){
+res.writeHead(200,{'Content-Type':'text/html'});
+res.end('Hello My Name is Javed');
+}).listen(3004);
+               
